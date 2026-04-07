@@ -21,6 +21,7 @@ for(let i = 0; i < 3; i++) {
 
 
 // continue: 만나는 즉시 그 다음 루프로 진행. 밑의 코드는 실행 X
+//     여기서는 i = 0, 2, 4의 경우 if가 true이므로 continue실행되어 출력X
 for(let i = 0; i < 5; i++) {
   if(i % 2 === 0) {
     continue; 

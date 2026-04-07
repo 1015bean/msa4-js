@@ -1,5 +1,5 @@
 // 짝수, 홀수 판별
-let num = 0
+let num = 4
 
 if(typeof num !== 'number' || num === 0) {
   console.log('잘못된 입력입니다.')
@@ -10,20 +10,35 @@ if(typeof num !== 'number' || num === 0) {
 }
 
 
-// 날짜 입력, 요일 출력
-// let month = 4
-let date = 7
 
-// 수요일 1일
+
+// 4월 날짜 입력, 요일 출력
+// 수요일은 1일
 
 // 7일부터, i = date % 7 
-// 월6 화0 수1  목 2 금3 토4 일5
+// 월6 화0 수1 목2 금3 토4 일5
 
-for(i = 0; 1 <= 6; i++) {
-  if(date % 7 === (6)) {
-  
+let date = 25;
+let day = '';
+
+if(date <= 0 || date >= 31) {
+   console.log(`잘못된 입력입니다.`);
+} else {
+  if(date % 7 === 0) {
+    day = '화';
+  } else if(date % 7 === 1) {
+    day = '수';
+  } else if(date % 7 === 2) {
+    day = '목';
+  } else if(date % 7 === 3) {
+    day = '금';
+  } else if(date % 7 === 4) {
+    day = '토';
+  } else if(date % 7 === 5) {
+    day = '일';
+  } else {
+    day = '월';
   }
-
+  console.log(`4월 ${date}일은 ${day}요일입니다.`);
 }
-
-console.log(`${month}월 ${date}일은 ${day}요일입니다.`)
+  
