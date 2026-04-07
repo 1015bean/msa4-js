@@ -1,5 +1,7 @@
 // 데이터 타입: 여러 종류의 데이터를 식별하는 분류 체계(데이터의 분류)
 // JS는 하나의 변수에 어떤 타입의 데이터도 저장이 가능
+
+// typeof: 데이터타입을 판별하는 요소 
 let num1 = 1
 mun1 = "ttt"
 
@@ -56,5 +58,3 @@ console.log(obj.key1);
 // 원시 타입(primitive type)과 참조 타입(reference type)
 // :원시 타입 -> object 등. 
 // :참조 타입 -> number, string, boolean, null, undefined, symbol 등.
-
-// 코드 표기법(변수 등의 이름을 작성하는 규칙): 파스칼기법/카멜기법/스네이크기법

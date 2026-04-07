@@ -1,4 +1,4 @@
-let score = 101
+let score = 101 //경계값 테스트
 
 if(0 <= score && score <= 100) {
   if(score === 100) {
@@ -23,7 +23,7 @@ if(0 <= score && score <= 100) {
 
 let grade = 'F';
 
-if((0 > score) || (100 < score) || typeof score !== 'number') {
+if((0 > score) || (100 < score) ||   score !== 'number') {
     console.log('점수가 바르지 않습니다.');
 } else {
     if (score === 100) {
