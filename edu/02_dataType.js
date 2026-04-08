@@ -56,5 +56,14 @@ console.log(obj.key1);
 
 
 // 원시 타입(primitive type)과 참조 타입(reference type)
-// :원시 타입 -> object 등. 
-// :참조 타입 -> number, string, boolean, null, undefined, symbol 등.
+// 원시 타입 
+//    : number, string, boolean, null, undefined, symbol 등.
+//    메모리에 각 데이터값을 서로 따로따로 저장.
+//    let num = 5;   let num2 = num;    =>   num과 num2는 각각 5를 가짐
+
+// 참조 타입 
+//   : object 등. 
+//   복제된 객체는 원본 데이터의 주소를 가져와서(참조값) 데이터값으로 저장
+//   > 둘 중에 하나라도 데이터 값이 바뀌면 둘 다 바뀌어버림
+
+
