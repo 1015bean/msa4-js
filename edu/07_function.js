@@ -20,7 +20,6 @@
 
 
 
-
 // parameter(변수): 함수 정의에서 전달받은 argment를 저장하는 변수(소괄호 안)인 a와 b
 function fnc1(a, b) {       // 선언부: {} 안, 처리할 식이 들어가는 부분
   let sum =  a + b;
@@ -31,7 +30,6 @@ function fnc1(a, b) {       // 선언부: {} 안, 처리할 식이 들어가는 
 // argument(인수): 함수 호출에서 전달되는 값(소괄호 안)인 1과 2
 let result = fnc1(1, 2);
 console.log(result);
-
 
 
 
@@ -63,7 +61,6 @@ console.log(fnc2(3, 5));
 
 
 
-
 //fnc3(1, 1);   // 참조에러 발생
 const fnc3 = function(a, b) {
   return a + b;
@@ -84,11 +81,20 @@ console.log(fnc3(10, 20));
 // 화살표 함수: 함수 표현식을 간략화 한 것. return 코드가 한줄일 때 간소화 가능
 
 //  변수선언( const 변수이름 ) & 변수초기화 및 함수선언( = (파라미터) => 처리식; )
+//     처리식이 복잡할 때는 처리식을 중괄호로 감싸기도 함(  { 처리식 }  )
 const fnc4 = (a, b) => a + b;
 const fnc5 = a => `ttt ${a}`;
 const fnc6 = () => 'test';
 
+const fnc7 = (val) => {
+  
+  if(val === '비교대상') {
+    return true;
+  } else {
+    return false;
+  }
 
+}
 
 
 
