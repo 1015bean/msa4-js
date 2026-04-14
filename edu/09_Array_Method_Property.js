@@ -217,7 +217,7 @@ console.log(arr, resultArr);
 // Array.map(callback): T[]
 //   기존의 배열을 활용하여 새로운 배열을 만들고 싶을 때 사용
 //   배열의 모든 요소에 대해 콜백 함수를 반복 실행한 후,
-//   콜백 함수의 리턴 값을 모아서 새로운 배열을 반환
+//   콜백 함수의 리턴 값을 모아서 새로운 배열을 반환!
 arr = [1, 2, 3, 4, 5, 6];
 
 resultArr = arr.map(val => {
@@ -277,7 +277,7 @@ console.log(resultArr);  //'false'
 
 // Array.filter(callback): T[]
 //   배열의 모든 요소에 대해 콜백 함수를 반복 실행한 후,
-//   조건에 만족한 요소만 모아서 새로운 배열을 반환
+//   !조건에 만족한 요소만 모아서 새로운 배열을 반환!
 arr = [
   { name: '홍길동', age: 20 },
   { name: '둘리', age: 40 },
@@ -289,7 +289,7 @@ console.log(resultArr);
 
 
 // Array.forEach(callback): void
-//   배열의 모든 요소에 대해 콜백 !함수를 반복 실행하고 싶을 때! 사용
+//   !배열의 모든 요소에 대해 콜백 함수를 반복 실행하고 싶을 때! 사용
 arr = [
   { name: '홍길동', age: 20 },
   { name: '둘리', age: 40 },
