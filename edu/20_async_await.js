@@ -1,4 +1,5 @@
 // async/await
+//    프로미스-체이닝방식으로 작성한 코드도 복잡해졌을 때 가독성을 좋게 해주는 작성 방식
 
 const timePromise = (str, ms) => {
   return new Promise((resolve, reject) => {
@@ -25,6 +26,11 @@ timePromise('A', 1000)
 
 
 
+// async () => {
+//  try {
+//    await 실행할 처리
+//  } 
+// };
 
 async function test() {
   try {

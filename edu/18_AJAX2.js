@@ -1,3 +1,5 @@
+// *****코드 잘못됐을 가능성? tng/99.js 참고하기******
+
 // 18_AJAX.js에서 프로미스-체인기법으로 작성한 코드를 async_await 문법으로 작성하기(작성방법)
 
 // 데이터를 받아와서, 데이터(사진과 저작권자명) 정보가 담긴 카드가 생성되도록 하기
@@ -35,12 +37,12 @@ form.addEventListener('submit', async (e) => {
 
       console.log(response);
 
-      // 카드 넣을 컨테이너
-      const container = document.querySelector('.container');
-      container.replaceChildren();
+    // 카드 넣을 컨테이너
+    const container = document.querySelector('.container');
+    container.replaceChildren();
 
-      // response.data: 서버가 보내준 데이터가 저장된 프로파티 (배열)
-      response.data.forEach(item => {
+    // response.data: 서버가 보내준 데이터가 저장된 프로파티 (배열)
+    response.data.forEach(item => {
 
       // 카드 이미지 요소 생성
       const newCardImg = document.createElement('span');
