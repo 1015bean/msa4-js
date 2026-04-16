@@ -43,10 +43,42 @@ console.log(hoho);  //'호호' 출력
 
 // let와 const의 경우 호이스팅 문제를 발생시키지 않음. 
 // 선언되지 않은 변수가 등장하면 참조할 값이 없으니 에러남(참조 에러)
-console.log(haha);  //참조 에러 
+// console.log(haha);  //참조 에러 
 let haha = '하하';
 console.log(haha);
 
+
+
+
+
+
+// 스코프: 함수레벨 스코프 & 블록레벨 스코프
+////// 함수레벨 스코프
+////// : var로 선언한 변수는 블록범위를 벗어나도, 같은 함수 범위 안에서는 에러가 안 남(var는 호이스팅 적용되므로)
+function test() {
+  if (true) {
+    var x = 10;
+  }
+  console.log(x); // 10 출력 ({블록} 밖에서도 접근 가능)
+}
+console.log(x); // undefind(함수 밖에서는 접근 불가)
+
+test();
+
+
+////// 블록레벨 스코프
+////// 블록: 함수에서 '{}'로 둘러싸인 범위를 의미
+////// 함수 블록 안에 let&const 변수를 선언 시, 블록 안의 실행이 끝나면 블록 안의 데이터는 메모리에서 사라짐.
+function test() {
+  if (true) {
+    var x = 10;
+    console.log(x); // 10 출력 (같은 {블록} 안이므로 실행 잘 됨)
+  }
+  console.log(x); // undefind(블럭 밖에서는 접근 불가)
+}
+console.log(x); // undefind
+
+test();
 
 
 
@@ -64,3 +96,7 @@ console.log(mul);
 
 mul = "1";
 console.log(mul);
+
+
+
+
